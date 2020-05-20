@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/background-top.png), url(../images/background-bottom.png);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.px-19 {
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.pt-178 {
+    padding-top: 178px;
+}
+
+.pt-36 {
+    padding-top: 36px;
+}
+
+.pb-176 {
+    padding-bottom: 176px;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 50px;
+    height: 54px;
+    border: none;
+    box-shadow: 0px 3px 6px #9a9a9a;
+}
+
+.input-group-text {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 54px;
+    width: 80px;
+    border: none;
+    box-shadow: 0px 3px 6px #9a9a9a;
+}
+
+.form-control:focus {
+    border: 3px solid #00F53F;
+    box-shadow: 0px 3px 6px #9a9a9a;
+}
+
+::placeholder {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.email-icon {
+    background-image: url(../images/email.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
+.password-icon {
+    background-image: url(../images/password.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+}
+
+.btn {
+    height: 50px;
+    border-radius: 50px;
+    background-image: linear-gradient(to left, #42E688, #57F83B);
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: .375rem 4rem;
+}
+
+.btn::after {
+    content: ' ';
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-left: 10px;
+}
