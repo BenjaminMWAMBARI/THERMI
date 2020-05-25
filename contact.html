@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Thermi - contact</title>
+</head>
+
+<body class="px-19 background-top">
+    <div class="center pt-103">
+        <img class="logo-small" src="images/thermi-logo.svg" alt="thermi-logo">
+        <h1 class="pt-16">Contact opnemen</h1>
+    </div>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item nav-item-nonselected dashboard">
+            <a class="nav-link" href="dashboard-week.html">Overzicht</a>
+        </li>
+        <li class="nav-item nav-item-nonselected caretaker">
+            <a class="nav-link" href="caretakers.html">Mantelzorgers</a>
+        </li>
+        <li class="nav-item nav-item-selected contact">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item nav-item-nonselected signout">
+            <a class="nav-link" href="login.html">Afmelden</a>
+        </li>
+    </ul>
+
+    <p class="pt-36">Neem telefonisch contact op met Gunnar</p>
+
+    <a class="mt-16 btn-call" href="tel:0031478050580">
+        <div class="center">
+            <img class="call-icon" src="images/call.svg" alt="call">
+            <p class="inline align-bottom">Bel Gunnar op</p>
+        </div>
+
+    </a>
+
+    <div class="pt-36">
+        <p>Of typ een bericht:</p>
+        <form class="center">
+            <div class="form-group input-group mb-3">
+                <textarea class="textarea mt-16 form-control" id="exampleFormControlTextarea1" rows="10" placeholder="JE BERICHT"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="send-message" formaction="message-sent.html">Verstuur bericht</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

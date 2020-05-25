@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Thermi - humidity</title>
+</head>
+
+<body class="px-19 background-top">
+    <div class="center pt-103">
+        <img class="logo-small" src="images/thermi-logo.svg" alt="thermi-logo">
+        <h1 class="pt-16">Luchtvochtigheid</h1>
+    </div>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item nav-item-selected dashboard">
+            <a class="nav-link" href="dashboard-week.html">Overzicht</a>
+        </li>
+        <li class="nav-item nav-item-nonselected caretaker">
+            <a class="nav-link" href="caretakers.html">Mantelzorgers</a>
+        </li>
+        <li class="nav-item nav-item-nonselected contact">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item nav-item-nonselected signout">
+            <a class="nav-link" href="login.html">Afmelden</a>
+        </li>
+    </ul>
+
+    <div class="dgraph mt-16">
+        <img id="dhum-graph" src="images/dhum-ma.svg" alt="hum-ma">
+        <a class="btn-detailpage-selected" href="humidity-detail.html">Week</a>
+        <a class="btn-detailpage-nonselected" href="humidity-detail-month.html">Maand</a>
+        <a href="#" id="dgraph-ma"></a>
+        <a href="#" id="dgraph-di"></a>
+        <a href="#" id="dgraph-wo"></a>
+        <a href="#" id="dgraph-do"></a>
+        <a href="#" id="dgraph-vr"></a>
+        <a href="#" id="dgraph-za"></a>
+        <a href="#" id="dgraph-zo"></a>
+    </div>
+
+    <div class="center mt-16">
+        <a class="btn-return" href="dashboard-week.html">Terug naar overzicht</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("#dgraph-ma").on("click", function(e) {
+            $("#dhum-graph").attr("src", "images/dhum-ma.svg");
+        });
+
+        $("#dgraph-di").on("click", function(e) {
+            $("#dhum-graph").attr("src", "images/dhum-di.svg");
+        });
+
+        $("#dgraph-wo").on("click", function(e) {
+            $("#dhum-graph").attr("src", "images/dhum-wo.svg");
+        });
+
+        $("#dgraph-do").on("click", function(e) {
+            $("#dhum-graph").attr("src", "images/dhum-do.svg");
+        });
+
+        $("#dgraph-vr").on("click", function(e) {
+            $("#dhum-graph").attr("src", "images/dhum-vr.svg");
+        });
+
+        $("#dgraph-za").on("click", function(e) {
+            $("#dhum-graph").attr("src", "images/dhum-za.svg");
+        });
+
+        $("#dgraph-zo").on("click", function(e) {
+            $("#dhum-graph").attr("src", "images/dhum-zo.svg");
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Thermi - temperature</title>
+</head>
+
+<body class="px-19 background-top">
+    <div class="center pt-103">
+        <img class="logo-small" src="images/thermi-logo.svg" alt="thermi-logo">
+        <h1 class="pt-16">Temperatuur</h1>
+    </div>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item nav-item-selected dashboard">
+            <a class="nav-link" href="dashboard-week.html">Overzicht</a>
+        </li>
+        <li class="nav-item nav-item-nonselected caretaker">
+            <a class="nav-link" href="caretakers.html">Mantelzorgers</a>
+        </li>
+        <li class="nav-item nav-item-nonselected contact">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item nav-item-nonselected signout">
+            <a class="nav-link" href="login.html">Afmelden</a>
+        </li>
+    </ul>
+
+    <div class="dgraph mt-16">
+        <img id="dtemp-graph" src="images/dtemp-ma.svg" alt="temp-ma">
+        <a class="btn-detailpage-selected" href="temperature-detail.html">Week</a>
+        <a class="btn-detailpage-nonselected" href="temperature-detail-month.html">Maand</a>
+        <a href="#" id="dgraph-ma"></a>
+        <a href="#" id="dgraph-di"></a>
+        <a href="#" id="dgraph-wo"></a>
+        <a href="#" id="dgraph-do"></a>
+        <a href="#" id="dgraph-vr"></a>
+        <a href="#" id="dgraph-za"></a>
+        <a href="#" id="dgraph-zo"></a>
+    </div>
+
+    <p id="ddate" class="pt-16 m-0 fs-12 spacing-2 uppercase">25 Mei 2020</p>
+    <p id="dpeaktemp" class="pt-16 m-0 fs-12 spacing-2 uppercase">Piekmoment: 13:00 - 23°C</p>
+    <p id="dlowtemp" class="pt-16 m-0 fs-12 spacing-2 uppercase">Dalmoment: 5:00 - 18°C</p>
+
+    <div class="center mt-16">
+        <a class="btn-return" href="dashboard-week.html">Terug naar overzicht</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("#dgraph-ma").on("click", function(e) {
+            $("#dtemp-graph").attr("src", "images/dtemp-ma.svg");
+            $("#ddate").html("25 Mei 2020");
+            $("#dpeaktemp").html("Piekmoment: 13:00 - 23°C");
+            $("#dlowtemp").html("Dalmoment: 5:00 - 18°C");
+        });
+
+        $("#dgraph-di").on("click", function(e) {
+            $("#dtemp-graph").attr("src", "images/dtemp-di.svg");
+            $("#ddate").html("26 Mei 2020");
+            $("#dpeaktemp").html("Piekmoment: 14:00 - 24°C");
+            $("#dlowtemp").html("Dalmoment: 6:00 - 17°C");
+        });
+
+        $("#dgraph-wo").on("click", function(e) {
+            $("#dtemp-graph").attr("src", "images/dtemp-wo.svg");
+            $("#ddate").html("27 Mei 2020");
+            $("#dpeaktemp").html("Piekmoment: 13:00 - 24°C");
+            $("#dlowtemp").html("Dalmoment: 7:00 - 18°C");
+        });
+
+        $("#dgraph-do").on("click", function(e) {
+            $("#dtemp-graph").attr("src", "images/dtemp-do.svg");
+            $("#ddate").html("28 Mei 2020");
+            $("#dpeaktemp").html("Piekmoment: 13:00 - 22°C");
+            $("#dlowtemp").html("Dalmoment: 6:00 - 16°C");
+        });
+
+        $("#dgraph-vr").on("click", function(e) {
+            $("#dtemp-graph").attr("src", "images/dtemp-vr.svg");
+            $("#ddate").html("29 Mei 2020");
+            $("#dpeaktemp").html("Piekmoment: 13:00 - 21°C");
+            $("#dlowtemp").html("Dalmoment: 5:00 - 16°C");
+        });
+
+        $("#dgraph-za").on("click", function(e) {
+            $("#dtemp-graph").attr("src", "images/dtemp-za.svg");
+            $("#ddate").html("30 Mei 2020");
+            $("#dpeaktemp").html("Piekmoment: 13:00 - 22°C");
+            $("#dlowtemp").html("Dalmoment: 7:00 - 18°C");
+        });
+
+        $("#dgraph-zo").on("click", function(e) {
+            $("#dtemp-graph").attr("src", "images/dtemp-zo.svg");
+            $("#ddate").html("31 Mei 2020");
+            $("#dpeaktemp").html("Piekmoment: 13:00 - 24°C");
+            $("#dlowtemp").html("Dalmoment: 6:00 - 20°C");
+        });
+    </script>
+
+
+</body>
+
+</html>

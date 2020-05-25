@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Thermi - add caretaker</title>
+</head>
+
+<body class="px-19 background-top">
+    <div class="center pt-103">
+        <img class="logo-small" src="images/thermi-logo.svg" alt="thermi-logo">
+        <h1 class="pt-16">Mantelzorger uitnodigen</h1>
+    </div>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item nav-item-nonselected dashboard">
+            <a class="nav-link" href="dashboard-week.html">Overzicht</a>
+        </li>
+        <li class="nav-item nav-item-selected caretaker">
+            <a class="nav-link" href="caretakers.html">Mantelzorgers</a>
+        </li>
+        <li class="nav-item nav-item-nonselected contact">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item nav-item-nonselected signout">
+            <a class="nav-link" href="login.html">Afmelden</a>
+        </li>
+    </ul>
+
+    <div class="pt-36 pb-177">
+        <p>Vul het e-mailadres in:</p>
+        <form class="center">
+            <div class="form-group input-group mb-3">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-MAILADRES">
+            </div>
+            <p class="left">Vul de voornaam in:</p>
+            <div class="form-group input-group mb-3">
+                <input type="firstname" class="form-control" id="firstname" name="firstname" placeholder="VOORNAAM">
+            </div>
+            <p class="left">Vul de achternaam in:</p>
+            <div class="form-group input-group mb-3">
+                <input type="lastname" class="form-control" id="lastname" name="lastname" placeholder="ACHTERNAAM">
+            </div>
+            <button type="submit" class="btn btn-primary" id="send-invitation" formaction="caretaker-invited.html">Verstuur uitnodiging</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

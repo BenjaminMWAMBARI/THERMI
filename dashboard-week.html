@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Thermi - dashboard</title>
+</head>
+
+<body class="px-19 background-top">
+    <div class="center pt-103">
+        <img class="logo-small" src="images/thermi-logo.svg" alt="thermi-logo">
+        <h1 class="pt-16">Overzicht</h1>
+    </div>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item nav-item-selected dashboard">
+            <a class="nav-link" href="dashboard-week.html">Overzicht</a>
+        </li>
+        <li class="nav-item nav-item-nonselected caretaker">
+            <a class="nav-link" href="caretakers.html">Mantelzorgers</a>
+        </li>
+        <li class="nav-item nav-item-nonselected contact">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item nav-item-nonselected signout">
+            <a class="nav-link" href="login.html">Afmelden</a>
+        </li>
+    </ul>
+
+    <div class="center pt-16">
+        <div class="row">
+            <a class="db-link w-178 mr-auto" href="temperature-detail.html">
+                <div class="col-2 max-w-178 h-144 db-info">
+                    <img class="db-icon" src="images/temperature.svg" alt="temperature">
+                    <h2 class="pt-10 fs-12">Temperatuur</h2>
+                    <p class="inline-block pt-10 measurement">22<sup>°C</sup></p>
+                    <p class="details">Details</p>
+                </div>
+            </a>
+
+            <a class="db-link w-178" href="humidity-detail.html">
+                <div class="col-2 max-w-178 h-144 db-info">
+                    <img class="db-icon" src="images/humidity.svg" alt="humidity">
+                    <h2 class="pt-10 fs-12">Luchtvochtigheid</h2>
+                    <p class="inline-block pt-10 measurement">43<sup>%</sup></p>
+                    <p class="details">Details</p>
+                </div>
+            </a>
+        </div>
+        <div class="row pt-16">
+            <div class="w-178 mr-auto">
+                <div class="col-2 mr-auto max-w-178 h-144 db-info">
+                    <img class="db-icon" src="images/consumption.svg" alt="consumption">
+                    <h2 class="pt-10 fs-12">Verbruikt vandaag</h2>
+                    <p class="inline-block pt-10 measurement">23<sup>kWh</sup></p>
+                </div>
+            </div>
+
+            <div class="w-178">
+                <div class="col-2 max-w-178 h-144 db-info">
+                    <img class="db-icon" src="images/saving.svg" alt="saving">
+                    <h2 class="pt-10 fs-12">Bespaart t.o.v. vorige maand</h2>
+                    <p class="inline-block measurement">12<sup>kWh</sup></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="graph mt-16 mb-100">
+        <img src="images/graph-week.svg" alt="graph-week">
+        <a class="btn-dashboard-selected" href="dashboard-week.html">Week</a>
+        <a class="btn-dashboard-nonselected" href="dashboard-month.html">Maand</a>
+    </div>
+</body>
+
+</html>
