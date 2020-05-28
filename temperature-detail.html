@@ -55,48 +55,55 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $("#dgraph-ma").on("click", function(e) {
+            event.preventDefault();
             $("#dtemp-graph").attr("src", "images/dtemp-ma.svg");
             $("#ddate").html("25 Mei 2020");
             $("#dpeaktemp").html("Piekmoment: 13:00 - 23°C");
             $("#dlowtemp").html("Dalmoment: 5:00 - 18°C");
         });
 
-        $("#dgraph-di").on("click", function(e) {
+        $("#dgraph-di").on("click", function(event) {
+            event.preventDefault();
             $("#dtemp-graph").attr("src", "images/dtemp-di.svg");
             $("#ddate").html("26 Mei 2020");
             $("#dpeaktemp").html("Piekmoment: 14:00 - 24°C");
             $("#dlowtemp").html("Dalmoment: 6:00 - 17°C");
         });
 
-        $("#dgraph-wo").on("click", function(e) {
+        $("#dgraph-wo").on("click", function(event) {
+            event.preventDefault();
             $("#dtemp-graph").attr("src", "images/dtemp-wo.svg");
             $("#ddate").html("27 Mei 2020");
             $("#dpeaktemp").html("Piekmoment: 13:00 - 24°C");
             $("#dlowtemp").html("Dalmoment: 7:00 - 18°C");
         });
 
-        $("#dgraph-do").on("click", function(e) {
+        $("#dgraph-do").on("click", function(event) {
+            event.preventDefault();
             $("#dtemp-graph").attr("src", "images/dtemp-do.svg");
             $("#ddate").html("28 Mei 2020");
             $("#dpeaktemp").html("Piekmoment: 13:00 - 22°C");
             $("#dlowtemp").html("Dalmoment: 6:00 - 16°C");
         });
 
-        $("#dgraph-vr").on("click", function(e) {
+        $("#dgraph-vr").on("click", function(event) {
+            event.preventDefault();
             $("#dtemp-graph").attr("src", "images/dtemp-vr.svg");
             $("#ddate").html("29 Mei 2020");
             $("#dpeaktemp").html("Piekmoment: 13:00 - 21°C");
             $("#dlowtemp").html("Dalmoment: 5:00 - 16°C");
         });
 
-        $("#dgraph-za").on("click", function(e) {
+        $("#dgraph-za").on("click", function(event) {
+            event.preventDefault();
             $("#dtemp-graph").attr("src", "images/dtemp-za.svg");
             $("#ddate").html("30 Mei 2020");
             $("#dpeaktemp").html("Piekmoment: 13:00 - 22°C");
             $("#dlowtemp").html("Dalmoment: 7:00 - 18°C");
         });
 
-        $("#dgraph-zo").on("click", function(e) {
+        $("#dgraph-zo").on("click", function(event) {
+            event.preventDefault();
             $("#dtemp-graph").attr("src", "images/dtemp-zo.svg");
             $("#ddate").html("31 Mei 2020");
             $("#dpeaktemp").html("Piekmoment: 13:00 - 24°C");

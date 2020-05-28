@@ -50,31 +50,38 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $("#dgraph-ma").on("click", function(e) {
+        $("#dgraph-ma").on("click", function(event) {
+            event.preventDefault();
             $("#dhum-graph").attr("src", "images/dhum-ma.svg");
         });
 
-        $("#dgraph-di").on("click", function(e) {
+        $("#dgraph-di").on("click", function(event) {
+            event.preventDefault();
             $("#dhum-graph").attr("src", "images/dhum-di.svg");
         });
 
-        $("#dgraph-wo").on("click", function(e) {
+        $("#dgraph-wo").on("click", function(event) {
+            event.preventDefault();
             $("#dhum-graph").attr("src", "images/dhum-wo.svg");
         });
 
-        $("#dgraph-do").on("click", function(e) {
+        $("#dgraph-do").on("click", function(event) {
+            event.preventDefault();
             $("#dhum-graph").attr("src", "images/dhum-do.svg");
         });
 
-        $("#dgraph-vr").on("click", function(e) {
+        $("#dgraph-vr").on("click", function(event) {
+            event.preventDefault();
             $("#dhum-graph").attr("src", "images/dhum-vr.svg");
         });
 
-        $("#dgraph-za").on("click", function(e) {
+        $("#dgraph-za").on("click", function(event) {
+            event.preventDefault();
             $("#dhum-graph").attr("src", "images/dhum-za.svg");
         });
 
-        $("#dgraph-zo").on("click", function(e) {
+        $("#dgraph-zo").on("click", function(event) {
+            event.preventDefault();
             $("#dhum-graph").attr("src", "images/dhum-zo.svg");
         });
     </script>
